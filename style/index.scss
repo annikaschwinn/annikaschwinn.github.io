@@ -1,5 +1,6 @@
-$base-bg: #22283f;
-$base-text: #d1ccff;
+$base-bg: #333333;
+$base-text: #fafafa;
+$highlight: #56317a;
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -15,15 +16,18 @@ html {
 }
 
 .parent {
+	background-color: rgba($color: #ffffff, $alpha: 0.1);
 	position: fixed;
 	top: 0;
 	left: 0;
 	margin: auto;
 	width: 100%;
+	height:120px;
 }
 .navbar {
 	display: flex;
 	justify-content: space-between;
+	height: 100%;
 	/*   */
 
 	.logo {
@@ -45,25 +49,55 @@ html {
 		}
 
 		li {
-			padding: 1.5rem;
-			margin-left: 1.5rem;
-			font-size: 1rem;
+			padding: 2rem;
+			margin-left: 1.3rem;
+			font-size: 1.3rem;
 			font-weight: bold;
+			text-transform:uppercase;
 
 			a {
-				color: $base-text;
+				color: white;
+				text-decoration: none;
+			}
+			a:hover {
+				color: white;
+				text-decoration: underline;
 			}
 		}
 	}
 }
+/* BUTTONS BUTTONS BUTTONS! */ 
+.button-4 {
+	background-color: transparent;
+	border: 3px solid #ffffff;
+	color: #ffffff;
+	transition: .3s;
+	width: 250px;
+	height:75px;
+	font-size:25px;
+	margin-top:50px;
+  }
+  .button-4:hover {
+	transform: scale(1.2);
+	transition: .3s;
+  }
+
+  
+
+
+.navbar .menu li a {
+	margin-right:4rem;
+}
 
 .wrapper {
-	height: 100vh;
+	height: 95vh;
 	width: 100vw;
+	max-width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #d1ccff;
+	color: $base-text;
+	background-image: linear-gradient(0.65turn, #1d68ca	0%, #8198e2 100%);
 }
 
 .introduction {
@@ -76,7 +110,7 @@ html {
 	text-align: center;
 	.intro-text-base {
 		.highlight {
-			color: darken($base-text, 10%);
+			border-bottom: 2px solid $base-text;
 		}
 		font-size: 5em;
 		padding-bottom: 1rem;
@@ -94,12 +128,13 @@ html {
 
 .contact-wrapper {
 	padding: 3rem;
-	background-color: lighten($base-bg, 5%);
+	background-color: white;
 	align-items: center;
 	text-align: center;
 	.contact-form {
 		max-width: 800px;
 		margin: auto;
+		color: #447baa;
 	}
 
 	.contact-header {
@@ -110,7 +145,7 @@ html {
 		padding-top: 2rem;
 	}
 
-	input[type="text"] {
+	input[type="text"], input[type="mail"] {
 		width: 100%;
 		padding: 12px 20px;
 		margin: 8px 0;
