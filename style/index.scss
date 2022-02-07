@@ -1,6 +1,6 @@
 $base-bg: #333333;
 $base-text: #fafafa;
-$highlight: #56317a;
+$highlight: #c858ac;
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -72,7 +72,7 @@ html {
 	border: 3px solid #ffffff;
 	color: #ffffff;
 	transition: .3s;
-	width: 250px;
+	width: 200px;
 	height:75px;
 	font-size:25px;
 	margin-top:50px;
@@ -83,7 +83,41 @@ html {
   }
 
   
+/* BUTTON END */
 
+
+/* TYPING ANIMATION */
+.typing-wrapper {
+	height: 20vh;
+	/*This part is important for centering*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+  }
+  
+  .typing-demo {
+	width: 19ch;
+	animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-family: monospace;
+	font-size: 2em;
+	color: black;
+  }
+  
+  @keyframes typing {
+	from {
+	  width: 0
+	}
+  }
+	  
+  @keyframes blink {
+	50% {
+	  border-color: transparent
+	}
+  }
 
 .navbar .menu li a {
 	margin-right:4rem;
@@ -97,7 +131,7 @@ html {
 	align-items: center;
 	justify-content: center;
 	color: $base-text;
-	background-image: linear-gradient(0.65turn, #1d68ca	0%, #8198e2 100%);
+	background-image: linear-gradient(0.60turn, #c858ac	0%, #3858e2 100%);
 }
 
 .introduction {
@@ -126,6 +160,19 @@ html {
 	}
 }
 
+
+@media (min-width: 768px) {
+	.wave {
+		margin-right:-100px;
+		width: 30%;
+	}
+}
+@media (max-width: 768px) {
+	.wave {
+		display:none;
+	}
+}
+
 .contact-wrapper {
 	padding: 3rem;
 	background-color: white;
@@ -134,7 +181,15 @@ html {
 	.contact-form {
 		max-width: 800px;
 		margin: auto;
-		color: #447baa;
+	}
+	.contact-form h1,h2,h3,h4,h5,h6 {
+		color: #c858ac;
+	}
+	.contact-form span, p {
+		color: black;
+	}
+	label {
+		color: black;
 	}
 
 	.contact-header {
