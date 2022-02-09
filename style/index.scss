@@ -66,6 +66,24 @@ html {
 		}
 	}
 }
+
+#services {
+	height: 95vh;
+	width: 100vw;
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: $base-text;
+	background-color: #3858e2;
+}
+
+.service-text {
+	color: rgb(207, 207, 207);
+	font-size: 1.2 em;
+	text-align: center;
+}
+
 /* BUTTONS BUTTONS BUTTONS! */ 
 .button-4 {
 	background-color: transparent;

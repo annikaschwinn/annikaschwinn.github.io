@@ -85,6 +85,29 @@ html {
   text-decoration: underline;
 }
 
+#services {
+  height: 95vh;
+  width: 100vw;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fafafa;
+  background-color: #3858e2;
+}
+
+.service-text {
+  color: #cfcfcf;
+  font-size: 1.2 em;
+  text-align: center;
+}
+
 /* BUTTONS BUTTONS BUTTONS! */
 .button-4 {
   background-color: transparent;
