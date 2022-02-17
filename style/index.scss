@@ -17,7 +17,7 @@ html {
 }
 
 .parent {
-	background-color: rgba($color: #ffffff, $alpha: 0.1);
+	background-color: rgba($color: #333, $alpha: 0.6);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -125,7 +125,7 @@ html {
   }
   
   .typing-demo {
-	width: 19ch;
+	width: 17ch;
 	animation: typing 3s steps(22), blink .5s step-end infinite alternate;
 	white-space: nowrap;
 	overflow: hidden;
@@ -243,7 +243,8 @@ html {
 	width: 100%;
 	height: 85vh;
 	padding: 3rem;
-	background-color: #6A58CF;
+	background-image: url('/img/aboutme2.png');
+	background-size:cover;
 	align-items: center;
 	text-align: center; 
 } 
@@ -321,7 +322,6 @@ html {
 	width: 100vw;
 	max-width: 100%;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	color: $base-text;
 	background-color: white;
@@ -387,12 +387,13 @@ html {
 	display: flex;
 	padding: 2px;
 	transition: .3s;
-	
-	&:hover &__image {
+}
+	.gallery:hover {
 		filter: grayscale(1);
+		transition: 1.3ms;
 	}
 	
-}
+
 
 .img-portfolio {
 	width: 150px;
