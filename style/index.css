@@ -3,12 +3,13 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: #333333;
-  color: #fafafa;
+  color: #ffffff;
   font-size: 16px;
   scroll-behavior: smooth;
 }
@@ -20,7 +21,7 @@ html {
   left: 0;
   margin: auto;
   width: 100%;
-  height: 120px;
+  height: 80px;
 }
 
 .navbar {
@@ -85,27 +86,14 @@ html {
   text-decoration: underline;
 }
 
-#services {
-  height: 95vh;
-  width: 100vw;
-  max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fafafa;
-  background-color: #3858e2;
+.header {
+  font-size: 4em;
+  padding-bottom: 2rem;
 }
 
-.service-text {
-  color: #cfcfcf;
-  font-size: 1.2 em;
-  text-align: center;
+.about-image {
+  border: white 2px solid;
+  float: left;
 }
 
 /* BUTTONS BUTTONS BUTTONS! */
@@ -126,6 +114,28 @@ html {
           transform: scale(1.2);
   -webkit-transition: .3s;
   transition: .3s;
+  cursor: pointer;
+}
+
+.button-work {
+  background-color: #4bc051;
+  color: white;
+  border: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  width: 200px;
+  margin-left: 50px;
+  height: 75px;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+.button-work:hover {
+  cursor: pointer;
+  -webkit-transition: .32;
+  transition: .32;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /* BUTTON END */
@@ -147,8 +157,8 @@ html {
 
 .typing-demo {
   width: 19ch;
-  -webkit-animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-          animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  -webkit-animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
+          animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -185,8 +195,8 @@ html {
   margin-right: 4rem;
 }
 
-.wrapper {
-  height: 95vh;
+.wrapper-introduction {
+  height: 80vh;
   width: 100vw;
   max-width: 100%;
   display: -webkit-box;
@@ -198,8 +208,22 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #fafafa;
+  color: #ffffff;
   background-image: linear-gradient(0.6turn, #c858ac 0%, #3858e2 100%);
+}
+
+.wrapper {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 80vh;
 }
 
 .introduction {
@@ -219,7 +243,7 @@ html {
 }
 
 .introduction .intro-text-base .highlight {
-  border-bottom: 2px solid #fafafa;
+  border-bottom: 2px solid #ffffff;
 }
 
 .introduction .intro-text-subline {
@@ -228,7 +252,7 @@ html {
 }
 
 .introduction .sub-text {
-  color: #cfcfcf;
+  color: #f1f1f1;
   font-size: 1.2em;
 }
 
@@ -243,6 +267,44 @@ html {
   .wave {
     display: none;
   }
+}
+
+.portfolio-wrapper {
+  width: 100%;
+  height: 85vh;
+  padding: 3rem;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.portfolio-wrapper h1 {
+  font-size: 4em;
+  padding-bottom: 2rem;
+  color: black;
+}
+
+.sub-text-black {
+  color: black;
+  font-size: 1.2em;
+}
+
+.portfolio-header {
+  font-size: 4em;
+  padding-bottom: 2rem;
+}
+
+.about-wrapper {
+  width: 100%;
+  height: 85vh;
+  padding: 3rem;
+  background-color: #6A58CF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .contact-wrapper {
@@ -260,7 +322,7 @@ html {
 }
 
 .contact-wrapper .contact-form h1, .contact-wrapper h2, .contact-wrapper h3, .contact-wrapper h4, .contact-wrapper h5, .contact-wrapper h6 {
-  color: #c858ac;
+  color: black;
 }
 
 .contact-wrapper .contact-form span, .contact-wrapper p {
@@ -271,11 +333,6 @@ html {
   color: black;
 }
 
-.contact-wrapper .contact-header {
-  font-size: 4em;
-  padding-bottom: 2rem;
-}
-
 .contact-wrapper form {
   padding-top: 2rem;
 }
@@ -284,5 +341,212 @@ html {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
+}
+
+.button-submit {
+  background-color: #4bc051;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 75px;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+.button-submit:hover {
+  cursor: pointer;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#services {
+  min-height: 30vh;
+  width: 100vw;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  background-color: white;
+}
+
+.service-icons {
+  width: 56px;
+  height: 56px;
+  text-align: center;
+}
+
+.service-text {
+  color: black;
+  font-size: 1.2 em;
+  text-align: center;
+}
+
+/* Style the counter cards */
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
+  padding: 16px;
+  height: 140px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-color: black;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+#footer {
+  height: 20vh;
+  width: 100vh;
+}
+
+#footer p, a {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+
+#signature {
+  padding-top: 100px;
+  padding-right: 200px;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.gallery:hover .gallery__image {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.img-portfolio {
+  width: 150px;
+  height: 150px;
+}
+
+/* center the blockquote in the page */
+.blockquote-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60vh;
+  padding: 0 20px;
+  background-image: linear-gradient(0.6turn, #3858e2 0%, #c858ac 100%);
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+/* Blockquote main style */
+.blockquote {
+  position: relative;
+  font-family: 'Barlow Condensed', sans-serif;
+  max-width: 620px;
+  margin: 80px auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/* Blockquote header */
+.blockquote h1 {
+  font-family: monospace;
+  position: relative;
+  /* for pseudos */
+  color: #d3a5ca;
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  border: 2px solid #fff;
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+/* Blockquote right double quotes */
+.blockquote h1:after {
+  content: "";
+  position: absolute;
+  border: 2px solid #d3a5ca;
+  border-radius: 0 50px 0 0;
+  width: 60px;
+  height: 60px;
+  bottom: -62px;
+  left: 50px;
+  border-bottom: none;
+  border-left: none;
+  z-index: 3;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+  .blockquote h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+}
+
+/* Blockquote subheader */
+.blockquote h4 {
+  position: relative;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding-top: 15px;
+  z-index: 1;
+  margin-left: 150px;
+  padding-left: 12px;
+}
+
+.blockquote h4:first-letter {
+  margin-left: -12px;
 }
 /*# sourceMappingURL=index.css.map */

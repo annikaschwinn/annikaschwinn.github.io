@@ -22,7 +22,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="wrapper">
+		<div class="wrapper-introduction">
 			<div class="introduction">
 				<h1 class="intro-text-base">
 					Hi, I'm <span class="highlight">Annika</span>.<!--👋--> 
@@ -38,6 +38,8 @@
 				</p>
                 <button class="btn button-4" onclick="location.href='#contact'" type="button">
                     Contact me</button>
+					<button class="btn button-work" onclick="location.href='#portfolio'" type="button">
+						Portfolio</button>
 			</div>
 		</div>
 		<div class="typing-wrapper">
@@ -46,18 +48,69 @@
 			</div>
 		</div>
 		<div id="services">
-			<p class="service-text">Delectus aut enim corrupti ullam sapiente rem minus perspiciatis. Laboriosam perspiciatis a unde delectus non. Delectus, nobis.</p>
+			<div class="row">
+				<div class="column">
+				  <div class="card">
+					<img class="service-icons" src="img/SVG/id.svg">
+					<p class="service-text">Corporate Design and Identity</p>
+				  </div>
+				</div>
+				<div class="column">
+				  <div class="card">
+					<img class="service-icons" src="img/SVG/code.svg">
+					<p class="service-text">HTML and CSS</p>
+				  </div>
+				</div>
+				<div class="column">
+				  <div class="card">
+					  <img class="service-icons" src="img/SVG/social.svg">
+					<p class="service-text">Social Media and Copywriting</p></div>
+				</div>
+				<div class="column">
+				  <div class="card">
+					  <img class="service-icons" src="img/SVG/Bildbearbeitung.svg">
+					<p class="service-text">Media Design and Image Editing</p></div>
+				</div>
+			  </div>
 		</div>
-		
-		<div id="contact" class="contact-wrapper">
+		<div id="about" class="about-wrapper">
 			<div class="contact-form">
-				<h1 class="contact-header">Contact</h1>
-				<span
+				<h1 class="header">About me</h1>
+				<img class="about-image" src="me.jpg">
+				<p class="sub-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit
+					nihil rem commodi ullam aspernatur delectus cupiditate et provident
+					repellat at placeat dolorem unde quasi doloribus eaque consequuntur,
+					cum optio?</p>
+			</div>
+		</div>
+		<div id="portfolio" class="portfolio-wrapper">
+			<div class="contact-form">
+				<h1 class="header">Portfolio</h1>
+				<p class="sub-text-black"
 					>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit
 					nihil rem commodi ullam aspernatur delectus cupiditate et provident
 					repellat at placeat dolorem unde quasi doloribus eaque consequuntur,
-					cum optio?</span
-				>
+					cum optio?</p>
+					<a href="#portfolio"><img src="img/Portfolio/Liquify_Preview.png"></a>
+			</div>
+		</div>
+		<div id="about">
+			<div class="blockquote-wrapper">
+				<div class="blockquote">
+					<h1>
+					Intuitive design happens when <span style="color:#ffffff">current knowledge</span> is the same as the <span style="color:#ffffff">target knowledge.</span>
+					</h1>
+					<h4>&mdash;Jared Spool<br><em>Web Site Usability: A Designer's Guide</em></h4>
+					</div>
+			</div>
+		</div>
+		<div id="contact" class="contact-wrapper">
+			<div class="contact-form">
+				<h1 class="header">Contact</h1>
+				<p class="sub-text">
+					Got questions or an upcoming idea in your head that you want to become reality?
+				Let's talk!</p>
 
 				<form>
 					<label for="fname">Your name</label><br />
@@ -65,7 +118,18 @@
 					<label for="mail">Your mail</label><br />
 					<input type="mail" id="mail" name="mail" />
 				</form>
+				<button class="btn button-submit" onclick="location.href='#'" type="button">
+                   Submit</button>
 			</div>
+		</div>
+		<div id="footer">
+			<img id="signature" src="img/signature.svg">
+			<a href="privacy">
+			Privacy |
+			</a>
+			<a href="terms">
+			Terms & Conditions
+			</a>
 		</div>
 	</body>
 </html>
